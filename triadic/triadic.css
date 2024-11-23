@@ -18,17 +18,20 @@ body{
     gap: 30px;
     margin-left: auto;
     padding: 20px;
+    
 }
 
 .nav-links > a{
     text-decoration-line: none;
+    font-size: 16px;
     color: black;
-    font-weight: 500;
+    font-weight: 600;
     transition: all 0.2s ease-in-out;
 }
 
 .nav-links > a:hover{
-    background-color: #BFB342;
+    background-color: #0f1e6a;
+    color: white;
     padding: 10px;
     font-weight: 700;
     border-radius: 5px;
@@ -38,6 +41,21 @@ body{
 
 .logo{
     max-height: 75px;
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: 30px;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    margin: 4px 0;
+    background-color: black;
 }
 
 .banner-image > img{
@@ -92,6 +110,7 @@ body{
 }
 
 footer {
+    color: white;
     background-color: #0f1e6a;
     padding: 40px 20px;  /* Add padding for better spacing */
     text-align: center;  /* Center the text and items */
@@ -117,22 +136,24 @@ footer {
 }
 
 .links a:hover {
-    background-color: #BFB342;  /* A slight hover effect */
-    color: white;  /* Change text color on hover */
+    background-color: #6a0f1e;  /* A slight hover effect */
+    color: black;  /* Change text color on hover */
     transform: scale(1.05);  /* Subtle scaling effect on hover */
 }
 
-@media screen and (max-width: 768px) {
-    .info-1, .info2, .info-3 {
-        flex-direction: column;
-    }
+i {
+    color: white;
+}
 
+@media (max-width: 768px) {
     .info-1, .info-2, .info-3 {
+        display: flex;
+        flex-direction: column-reverse; /* Swap the order of children */
         width: 90%;
         margin: 20px auto;
     }
 
-    .text-left{
+    .text-left {
         text-align: center;
         padding: 0 10px;
     }
@@ -140,6 +161,7 @@ footer {
     .image {
         height: auto;
         width: 275px;
+        margin: 0 auto; /* Center the image */
     }
 
     footer {
@@ -147,10 +169,15 @@ footer {
     }
 
     .links {
-        flex-direction: column;  /* Stack the links vertically */
+        flex-direction: column; /* Stack the links vertically */
         gap: 15px;
     }
+
+    .banner-image > img{
+        height: 300px;
+    }
 }
+
 
 @media screen and (max-width: 480px) {
     .navbar {
@@ -162,7 +189,7 @@ footer {
         flex-direction: column;
         gap: 15px;
         width: 100%;
-        background-color: #EDDD47;
+        background-color: #0f1e6a;
         position: absolute;
         top: 60px;
         left: 0;
@@ -182,13 +209,12 @@ footer {
     .nav-links > a {
         padding: 10px;
         font-size: 16px;
-        color: black;
-        font-weight: 500;
+        color: white;
+        font-weight: 600;
         text-align: center;
     }
 
     .nav-links > a:hover {
-        background-color: #BFB342;
         padding: 10px;
         font-weight: 700;
         border-radius: 5px;
@@ -206,7 +232,7 @@ footer {
     }
 
     .banner-image > img{
-        height: 275px;
+        height: 200px;
     }
 
     .image {

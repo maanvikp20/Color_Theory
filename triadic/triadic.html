@@ -9,10 +9,11 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
     <link rel="stylesheet" href="triadic.css">
+    <link rel="shortcut icon" href="https://i0.wp.com/rbgstore.ph/wp-content/uploads/2023/04/cropped-NEW-RBG-LOGO-1.png?fit=300%2C300&ssl=1" type="image/x-icon">
 </head>
 <body>
     <div class="navbar">
-      <img class="logo" src="dole.png" alt="Logo" />
+      <img class="logo" src="https://i0.wp.com/rbgstore.ph/wp-content/uploads/2023/04/cropped-NEW-RBG-LOGO-1.png?fit=300%2C300&ssl=1" alt="Logo" />
 
       <div class="nav-links">
         <a href="#">About Us</a>
@@ -20,11 +21,11 @@
         <a href="#">Farm Finder</a>
       </div>
 
-      <!-- <div class="menu-toggle" id="mobile-menu">
+      <div class="menu-toggle" id="mobile-menu">
         <div class="bar"></div>
         <div class="bar"></div>
         <div class="bar"></div>
-      </div> -->
+      </div>
     </div>
 
     <br />
@@ -43,22 +44,31 @@
 
         <div class="info">
           <div class="info-1">
-            <p class="text-left">Lorem ekkekekekekekeakl;eak;klealkekleale klea;eakleakleak;eka;lekake k;e;ka;klkelak;aek k;eakl;ekak;eak el;kel;kak;le; ;kekl;ekle;</p>
-            <img src="https://m.media-amazon.com/images/I/71dwVIvBBoL.__AC_SY445_SX342_QL70_FMwebp_.jpg" class="image">
+            <div class="text-left">
+              <h2>Green</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa vero eligendi, deserunt corrupti, labore sequi asperiores modi tempore nobis voluptatum nemo molestias quam officia architecto pariatur maiores ullam obcaecati optio impedit excepturi doloremque reprehenderit magnam necessitatibus? Laudantium numquam nostrum officia, tempora et voluptas fuga accusamus! Perspiciatis culpa, vitae cum maxime fugiat recusandae, ducimus totam dolor, hic reiciendis nesciunt exercitationem ipsa. Debitis magni quasi exercitationem ad, sint quo, nesciunt rem deserunt eos alias earum dolor eius fugit tempore dolores incidunt sed, quia assumenda illo accusantium sequi facere at numquam? Sapiente eos fugiat fuga impedit unde adipisci laborum quia delectus sed iure.</p>
+            </div>
+            <img src="https://www.steinair.com/wp-content/uploads/2019/10/LED-STRIP3-GREEN-2.jpg" class="image">
           </div>
 
           <div class="info-2">
-            <p class="text-left">
-              Lorem ekkekekekekekeakl;eak;klealkekleale klea;eakleakleak;eka;lekake k;e;ka;klkelak;aek k;eakl;ekak;eak el;kel;kak;le; ;kekl;ekle;
-            </p>
+            <div class="text-left">
+              <h2>Red</h2>
+              <p class="text-left">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit quidem iste velit dignissimos corporis, impedit ut non molestiae. Distinctio quo velit quas quisquam iure quia in dolorem voluptates earum asperiores? Similique quod pariatur eos, nemo dolorum praesentium est labore porro iure itaque ad ex architecto nostrum officiis magnam quia quibusdam illo quis in. Autem ex asperiores id vel illo consequuntur sint velit ea architecto distinctio, ut quisquam vitae molestias aspernatur ad hic consequatur veritatis natus corporis porro voluptate voluptas. Eius, architecto quia. Exercitationem qui dolores libero, ipsum autem quas natus repudiandae obcaecati nemo excepturi consequatur, ipsam deserunt fuga facilis dolor.
+              </p>
+            </div>
             <img src="https://m.media-amazon.com/images/I/71YrRrxPGIL._AC_SX679_PIbundle-2,TopRight,0,0_SH20_.jpg" class="image"/>
           </div>
 
           <div class="info-3">
-            <p class="text-left">
-              Lorem ekkekekekekekeakl;eak;klealkekleale klea;eakleakleak;eka;lekake k;e;ka;klkelak;aek k;eakl;ekak;eak el;kel;kak;le; ;kekl;ekle;
-            </p>
-            <img src="https://m.media-amazon.com/images/I/71fKoT0IJML._AC_UF894,1000_QL80_.jpg" class="image" style = "image">
+            <div class="text-left">
+              <h2>Blue</h2>
+              <p class="text-left">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas dolor quidem aut deleniti optio tempore et illo neque, delectus magni ipsa blanditiis praesentium accusantium velit assumenda fuga nobis exercitationem maxime, iusto itaque eius cupiditate obcaecati hic iure! Soluta doloremque saepe facilis odit asperiores? Sed mollitia nemo quis omnis est commodi cumque sunt voluptatum doloribus tenetur eveniet aut sint ullam porro, impedit eum adipisci alias ea! Rem ut et nihil molestias inventore omnis atque enim eos. Hic est, illo, laudantium laborum enim quia omnis odio, repudiandae tempore quibusdam delectus eligendi. Rerum minima consequatur omnis fugiat neque nulla, voluptate itaque quibusdam necessitatibus.
+              </p>
+            </div>
+            <img src="https://m.media-amazon.com/images/I/71fKoT0IJML._AC_UF894,1000_QL80_.jpg" class="image">
           </div>
         </div>
     </main>
@@ -81,5 +91,13 @@
           </div>
     </footer>
 
+    <script>
+      const mobileMenu = document.getElementById("mobile-menu");
+      const navLinks = document.querySelector(".nav-links");
+
+      mobileMenu.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+      });
+    </script>
 </body>
 </html>
